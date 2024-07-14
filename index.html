@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Book Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Book Tracker</h1>
+        <p class="quote">"Reading is to the mind what exercise is to the body." - Joseph Addison</p>
+        <div class="book-upload">
+            <h2>Upload a Book</h2>
+            <form id="bookForm">
+                <input type="text" id="userName" placeholder="Your Name" required>
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="number" id="totalPages" placeholder="Total Pages" min="1" required>
+                <input type="number" id="pagesRead" placeholder="Pages Read" min="0" required>
+                <input type="number" id="pagesPerDay" placeholder="Pages per Day" min="1" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+        <div class="book-list">
+            <h2>Books</h2>
+            <ul id="books"></ul>
+        </div>
+        <div class="book-options">
+            <h2>Books Drive</h2>
+            <a href="https://drive.google.com/drive/folders/1-fYXMd2o9Eqo7QjN7-Mx3AhpC9buWM45" target="_blank">Access Books on Google Drive</a>
+        </div>
+    </div>
+    <div class="music-player">
+        <h2>Listen to Lofi Music</h2>
+        <audio controls loop>
+            <source src="/mUSIC/Lukrembo - Morning (freetouse.com).mp3" type="audio/mpeg"> <!-- Replace 'path/to/lofi-music.mp3' with the actual path to your lofi music file -->
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
