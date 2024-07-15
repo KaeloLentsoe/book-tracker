@@ -1,7 +1,53 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-image: url(boover.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #0056b3;
+    border-radius: 5px;
 }
 
 .container {
@@ -105,6 +151,7 @@ button:hover {
     max-width: 300px;
     margin-top: 10px;
 }
+
 footer {
     background: #007BFF;
     color: white;
@@ -114,4 +161,19 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
